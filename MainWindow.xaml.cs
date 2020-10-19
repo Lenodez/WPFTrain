@@ -24,19 +24,15 @@ namespace WPFTrain
         {
             InitializeComponent();
         }
+    }
+    public class Phone
+    {
+        public string Name { get; set; }
+        public int Price { get; set; }
 
-        public class Phone
+        public override string ToString()
         {
-            public string Name { get; set; }
-            public int Price { get; set; }
-
-            public override string ToString()
-            {
-                return $"Смартфон {this.Name}; цена: {this.Price}";
-            }
+            return $"Смартфон {this.Name}; цена: {this.Price}";
         }
-
-        
-        
     }
 }
